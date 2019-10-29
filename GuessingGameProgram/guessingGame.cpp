@@ -2,6 +2,10 @@
 #include <cstdlib>
 #include <ctime>
 
+//*******************************
+//*   Jonathan Vazquez Rivera   *
+//* jvazquez441@email.suagm.edu *
+//*******************************
 using namespace std;
 
 int main()
@@ -14,7 +18,6 @@ int main()
 	num = 0;
 	randNum = rand() % 100 + 1;
 	//cout << "Rand num = " << randNum << endl << endl;
-
 
 	while (tryCounter < 6)
 	{
@@ -41,13 +44,13 @@ int main()
 			tryCounter++;
 		}
 	}
+
 	if (guessed == false)
 	{
-		system("CLS");
+		system("CLS"); // Used to clear console
+
 		cout << "You didn't guess the random number. The random number was " << randNum << "\n\n";
 	}
-	
-
 
 	return 0;
 }
